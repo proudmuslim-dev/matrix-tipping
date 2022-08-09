@@ -1,0 +1,19 @@
+[package]
+name = "matrix-tipping"
+version = "0.1.0"
+authors = ["Proudmuslim <proudmuslim-dev@protonmail.com>"]
+description = """
+(WIP) A Matrix bot for tipping users in Monero
+"""
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+matrix-sdk = "0.5.0"
+confy = "0.4.0"
+url = "2.2.2"
+colour = "0.6.0"
+
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
