@@ -6,6 +6,7 @@ pub struct BotConfig {
     pub homeserver_url: String,
     pub username: String,
     pub password: String,
+    pub sled_path: Option<String>,
 }
 
 impl BotConfig {
@@ -22,6 +23,7 @@ impl Default for BotConfig {
             homeserver_url: "https://matrix.org".to_owned(),
             username: "".to_owned(),
             password: "".to_owned(),
+            sled_path: None,
         }
     }
 }

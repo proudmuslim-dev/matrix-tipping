@@ -8,12 +8,13 @@ extern crate colour;
 use crate::{config::BotConfig, util::*};
 
 #[tokio::main]
-async fn main() -> Result<(), matrix_sdk::Error> {
+async fn main() -> anyhow::Result<()> {
     let BotConfig {
         homeserver_url,
         username,
         password,
+        sled_path,
     } = BotConfig::load().expect("Error loading config file!");
 
-    login(homeserver_url, &username, &password).await
+    login_and_sync(homeserver_url, username, password, sled_path).await
 }

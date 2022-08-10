@@ -10,10 +10,21 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-matrix-sdk = "0.5.0"
 confy = "0.4.0"
 url = "2.2.2"
 colour = "0.6.0"
+anyhow = "1.0.60"
+dirs = "4.0.0"
+matrix-sdk-sled = "0.1.0"
+tracing-subscriber = "0.3.15"
 
-serde = { version = "1", features = ["derive"] }
-tokio = { version = "1", features = ["full"] }
+[dependencies.matrix-sdk]
+version = "0.5.0"
+
+[dependencies.serde]
+version = "1"
+features = ["derive"]
+
+[dependencies.tokio]
+version = "1"
+features = ["full"]

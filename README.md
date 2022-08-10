@@ -10,7 +10,7 @@
   * [x] Login
   * [x] Autojoin
   * [x] Config file
-  * [ ] Ping command
+  * [x] Ping command
 * [ ] Figure out how to work with [Monero's RPC](https://crates.io/crates/monero-rpc)
 * [ ] Create database
   * [ ] Mapping username to balance (NOTE: balance shouldn't use decimals)
